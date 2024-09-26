@@ -6,19 +6,22 @@
 <body>
     <h1>Add Product</h1>
     <form action="add_product_action.php" method="post">
-        <label>Product Code:</label>
-        <input type="text" name="product_code"><br>
+        <label>Code:</label>
+        <input type="text" name="product_code" required><br>
 
-        <label>Product Name:</label>
-        <input type="text" name="product_name"><br>
+        <label>Name:</label>
+        <input type="text" name="product_name" required><br>
 
         <label>Version:</label>
-        <input type="text" name="version"><br>
+        <input type="text" name="version" required><br>
 
         <label>Release Date:</label>
-        <input type="date" name="release_date"><br>
+        <input type="date" name="release_date" required><br>
 
         <input type="submit" value="Add Product">
     </form>
+
+    <a href="index.php">View Product List</a>
 </body>
 </html>
+
